@@ -13,7 +13,7 @@
 
 /* ----------------------- ---  0 Imports ------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
 /* -----------------------  1. Global Styles ---------------------- */
 
@@ -36,7 +36,7 @@ old-rose: #c16e70ff;
 
 body {
     background-color: beige;
-    font-family: "Poppins", Tahoma, sans-serif;
+    font-family: "Open Sans", Tahoma, sans-serif;
     font-size: 15px;
     font-weight: 300;
     color: #151e3fff;
@@ -56,7 +56,7 @@ body {
 
 h1, h2, h3 {
     color: #151e3fff;
-    font-family: "Poppins", Tahoma, sans-serif;
+    font-family: "Open Sans", Tahoma, sans-serif;
     font-weight:500;
 }
 
@@ -67,6 +67,7 @@ h1 {
 
 h2 {
     font-size:21px;
+    line-height: 24px;
 }
 
 h3 {
@@ -75,51 +76,85 @@ h3 {
 }
 
 
-/* --------------------- ---  3. Areas --- --------------------- */
+/* --------------------- ---  3.0 Nav --- --------------------- */
 
-header {
-    background-color: lightgrey;
+.nav-box {
+    background-color: #030027ff;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 100px;
     flex-grow:0;
     flex-shrink:0;
-    padding:30px;
+    padding:20px 40px;
 }
 
-.content-container {
+.menu-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis:600px;
+    flex-wrap: nowrap;
+    column-gap:10px;
+}
+
+
+.menu-box li {
+    list-style-type: none;
+    color: white;
+}
+
+.menu-box li:hover {
+    list-style-type: none;
+    color: #dc9e82ff;
+}
+
+/* --------------------- ---  3.0 Layout --- --------------------- */
+
+    header {
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 150px;
+        flex-grow:0;
+        flex-shrink:0;
+        padding:30px;
+    }
+
+
+
+/* ---------------- --------  3.2 Body ------ ------------------ */
+.content-box-articles {
     background-color: lightyellow;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
-    flex-basis:450px;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
-
+    flex-basis: auto;
+    flex-wrap:wrap;
+    column-gap:30px;
+    row-gap:30px;
+    padding:30px;
 }
 
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items:center;
+        min-height:450px;
+        flex-basis: 280px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color: #c16e70ff;
+        border-radius:5px;
+        padding:20px;
+    }
 
-/* ---------------- --------  3.2 Body ------ ------------------ */
-
-.content-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items:center;
-    flex-basis: 280px ;
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: #c16e70ff;
-    border-radius:5px;
-    padding:20px;
-}
-
-.content-box p {
-    text-align:center;
-
+    .content-box p {
+        text-align:center;
+    }
 }
 
 /* ------------------------  3.3 Footer ------------------------ */
