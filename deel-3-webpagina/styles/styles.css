@@ -54,7 +54,7 @@ body {
 /* -----------------------  2. Typography ---------------------- */
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #151e3fff;
     font-family: "Open Sans", Tahoma, sans-serif;
     font-weight:500;
@@ -75,8 +75,16 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: white;
+    font-size:24px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 
 /* --------------------- ---  3.0 Nav --- --------------------- */
+
 
 .nav-box {
     background-color: #030027ff;
@@ -86,6 +94,9 @@ h3 {
     flex-basis: 100px;
     flex-grow:0;
     flex-shrink:0;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap:30px;
     padding:20px 40px;
 }
 
@@ -158,6 +169,5 @@ h3 {
 }
 
 /* ------------------------  3.3 Footer ------------------------ */
-
 
 
