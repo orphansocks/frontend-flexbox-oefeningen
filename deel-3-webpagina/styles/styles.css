@@ -1,1 +1,128 @@
 /*Schrijf hier jouw css*/
+
+/* ------------------------------Inhoud ----------------------------------- */
+/* 1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+         */
+
+/* ----------------------- ---  0 Imports ------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* -----------------------  1. Global Styles ---------------------- */
+
+
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS HEX */
+/*
+space-cadet: #151e3fff;
+oxford-blue: #030027ff;
+beige: #f2f3d9ff;
+buff: #dc9e82ff;
+old-rose: #c16e70ff;
+*/
+
+body {
+    background-color: beige;
+    font-family: "Poppins", Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #151e3fff;
+}
+
+.content-main-layout {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis:80vw;
+}
+
+/* -----------------------  2. Typography ---------------------- */
+
+
+h1, h2, h3 {
+    color: #151e3fff;
+    font-family: "Poppins", Tahoma, sans-serif;
+    font-weight:500;
+}
+
+h1 {
+    font-size:24px;
+    text-align: center;
+}
+
+h2 {
+    font-size:21px;
+}
+
+h3 {
+    font-size:18px;
+    text-align: center;
+}
+
+
+/* --------------------- ---  3. Areas --- --------------------- */
+
+header {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 150px;
+    flex-grow:0;
+    flex-shrink:0;
+    padding:30px;
+}
+
+.content-container {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-basis:450px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+
+/* ---------------- --------  3.2 Body ------ ------------------ */
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    flex-basis: 280px ;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #c16e70ff;
+    border-radius:5px;
+    padding:20px;
+}
+
+.content-box p {
+    text-align:center;
+
+}
+
+/* ------------------------  3.3 Footer ------------------------ */
+
+
+
